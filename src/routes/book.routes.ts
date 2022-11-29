@@ -1,5 +1,7 @@
 import express from "express";
-import { addBook, getAllBooks } from "../controller/book.controller";
+import { 
+    addBook,
+     getAllBooks } from "../controller/book.controller";
 import validate from "../middleware/validate";
 import { addBooksS } from '../zod_schema/schema';
 

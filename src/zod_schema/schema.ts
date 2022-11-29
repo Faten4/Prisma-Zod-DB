@@ -3,8 +3,7 @@ import { z } from "zod";
 export const addUserS = z.object({
   body: z.object({
     username: z
-      .string({ required_error: "username is required !" })
-      .min(3, "username must be more than 2 Chars"),
+      .string({ required_error: "username is required !" }),
     password: z
       .string({ required_error: "password is required !" })
       .min(6, "password must be more than 5 Chars"),

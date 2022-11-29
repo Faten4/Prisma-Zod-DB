@@ -1,5 +1,7 @@
 import express from 'express';
-import { addUser, getAllUsers } from '../controller/user.controller';
+import {
+    addUser, 
+     getAllUsers } from '../controller/user.controller';
 import validate from '../middleware/validate';
 import { addUserS } from '../zod_schema/schema';
 
